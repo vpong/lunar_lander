@@ -1,6 +1,9 @@
 default:
 	g++ -g -Wno-c++98-compat -Wno-padded *.cpp -std=c++11 -lSDL2 -lSDL2_ttf -o lunar_lander
 
+nodebug:
+	clang++ -O3 *.cpp -std=c++11 -lSDL2 -lSDL2_ttf -o lunar_lander
+
 nowarn:
 	g++ -g *.cpp -std=c++11 -lSDL2 -lSDL2_ttf -o lunar_lander
 
